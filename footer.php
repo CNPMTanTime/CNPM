@@ -22,14 +22,10 @@
             <div>
                 <ul class="uk-list uk-text-small">
                     <li><a class="uk-link-text" href="#">Thư góp ý</a></li>
-
                 </ul>
             </div>
-            <div>
-            </div>
-            <div>
-
-            </div>
+            <div></div>
+            <div></div>
             <div>
                 <ul class="uk-list uk-text-small">
                     <li><a class="uk-link-text" href="#">Biểu mẫu liên hệ</a></li>

@@ -22,7 +22,9 @@ svg {
     padding: 3px;
 }
 
-.jvectormap-zoomin, .jvectormap-zoomout, .jvectormap-goback {
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
     position: absolute;
     left: 10px;
     border-radius: 3px;
@@ -35,7 +37,8 @@ svg {
     box-sizing: content-box;
 }
 
-.jvectormap-zoomin, .jvectormap-zoomout {
+.jvectormap-zoomin,
+.jvectormap-zoomout {
     width: 10px;
     height: 10px;
 }

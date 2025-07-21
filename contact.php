@@ -1,7 +1,8 @@
-<?php include 'header.php'?>
+<?php include 'header.php'; ?>
 <?php
     $categories = SQLQuery::GetData('SELECT * FROM categories');
 ?>
+
 <div class="uk-section uk-section-default uk-padding-remove-top">
     <div class="uk-container">
         <div class="uk-grid-large" data-uk-grid>

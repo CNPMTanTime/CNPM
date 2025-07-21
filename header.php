@@ -2,7 +2,9 @@
     ob_start();
     session_start();
 ?>
-<?php include 'config/SQLQuery.php'?>
+
+<?php include 'config/SQLQuery.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
 
@@ -18,7 +20,6 @@
 </head>
 
 <body>
-
     <nav class="uk-navbar-container uk-letter-spacing-small">
         <div class="uk-container">
             <div class="uk-position-z-index" data-uk-navbar>
