@@ -1,4 +1,5 @@
-<?php include '../header.php'?>
+<?php include '../header.php'; ?>
+
 <?php
     $categoryList = SQLQuery::GetData('SELECT * FROM categories');
     $food_id = intval($_GET['id'] ?? 0);

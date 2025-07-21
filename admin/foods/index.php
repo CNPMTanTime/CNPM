@@ -1,4 +1,5 @@
-<?php include '../header.php'?>
+<?php include '../header.php'; ?>
+
 <?php
     $q = trim($_GET['q'] ?? '');
 
@@ -11,18 +12,11 @@
     }
 
     $foodList = SQLQuery::GetData($sql);
-?>
-<?php
+
     if (isset($_GET['del-id'])) {
         $delId = intval($_GET['del-id']);
 
         $food = SQLQuery::GetData("SELECT thumbnail FROM foods WHERE food_id = {$delId}");
-        // if ($food && !empty($food[0]['thumbnail'])) {
-        //     $filePath = '../../' . ltrim($food[0]['thumbnail'], '/');
-        //     if (file_exists($filePath)) {
-        //         unlink($filePath);
-        //     }
-        // }
 
         SQLQuery::NonQuery("DELETE FROM foods WHERE food_id = {$delId}");
 

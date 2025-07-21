@@ -1,4 +1,5 @@
-<?php include '../header.php'?>
+<?php include '../header.php'; ?>
+
 <?php
     $q = trim($_GET['q'] ?? '');
 
@@ -6,6 +7,7 @@
 
     $favoriteList = SQLQuery::GetData($sql);
 ?>
+
 <div class="dashboard-body">
     <div class="breadcrumb mb-24">
         <ul class="flex-align gap-4">

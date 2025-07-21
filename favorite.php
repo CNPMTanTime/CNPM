@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include 'config/SQLQuery.php';
 
 $foodId = isset($_GET['food_id']) ? (int) $_GET['food_id'] : 0;
@@ -17,20 +18,14 @@ if ($foodId <= 0) {
     exit;
 }
 
-$sql = 'SELECT * FROM favorite_foods WHERE user_id = :user_id AND food_id = :food_id';
-$params = [
-    ':user_id' => $userId,
-    ':food_id' => $foodId,
-];
-$result = SQLQuery::GetData($sql, ['params' => $params]);
+$sql = "SELECT * FROM favorite_foods WHERE user_id = '${userId}' AND food_id = '${foodId}'";
+
+$result = SQLQuery::GetData($sql);
 
 if (count($result) === 0) {
-    $insertSql = 'INSERT INTO favorite_foods (user_id, food_id)
-                  VALUES (:user_id, :food_id)';
-    SQLQuery::NonQuery($insertSql, [
-        ':user_id' => $userId,
-        ':food_id' => $foodId,
-    ]);
+    $insertSql = "INSERT INTO favorite_foods (user_id, food_id)
+                  VALUES ('${userId}', '${foodId}')";
+    SQLQuery::NonQuery($insertSql);
 }
 
 header("Location: $returnUrl");

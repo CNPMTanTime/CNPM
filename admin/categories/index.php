@@ -1,4 +1,5 @@
-<?php include '../header.php'?>
+<?php include '../header.php'; ?>
+
 <?php
     $q = trim($_GET['q'] ?? '');
 
@@ -10,8 +11,7 @@
     }
 
     $categoryList = SQLQuery::GetData($sql);
-?>
-<?php
+
     if (isset($_GET['del-id'])) {
         $delId = intval($_GET['del-id']);
 

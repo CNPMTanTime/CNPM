@@ -1,4 +1,5 @@
-<?php include 'header.php'?>
+<?php include 'header.php'; ?>
+
 <?php
     $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int) $_GET['page'] : 1;
 
@@ -27,6 +28,7 @@
     $totalPages = $foodPagination['page_number'];
     $currentPage = $page;
 ?>
+
 <div class="uk-section uk-section-default uk-padding-remove-top">
     <div class="uk-container">
         <h1 class="uk-nav-center">Tìm kiếm</h1>

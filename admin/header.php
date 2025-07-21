@@ -7,7 +7,7 @@
         exit;
     }
 ?>
-<?php include '../../config/SQLQuery.php'?>
+<?php include '../../config/SQLQuery.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@
 
         <a href="/" class="sidebar__logo d-flex align-items-center justify-content-center text-center p-20 position-sticky inset-block-start-0 bg-white w-100 z-1 pb-10">
             <img style="width: 40px" src="../../template/img/favicon.png" alt="Logo">
-            <div class="font-bold ms-4 fs-5 text-dark">Hướng dẫn nấu ăn</div>
+            <div class="font-bold ms-4 fs-5 text-dark">Thái</div>
         </a>
 
         <div class="sidebar-menu-wrapper overflow-y-auto scroll-sm">

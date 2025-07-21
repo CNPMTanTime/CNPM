@@ -1,4 +1,4 @@
-<?php include 'header.php'?>
+<?php include 'header.php'; ?>
 <?php
     $id = $_GET['id'] ?? '';
 
@@ -12,6 +12,7 @@
         $favoriteFoods = SQLQuery::GetData("SELECT * FROM favorite_foods WHERE user_id = '$userId' AND food_id = '$id'");
     }
 ?>
+
 <div class="uk-container">
     <div data-uk-grid>
         <div class="uk-width-1-2@s">
